@@ -3,7 +3,7 @@ import random
 def main():
     print("🔮 Welcome to Dhruv Pathak's Fortune Teller (21JE0311) 🔮")
     
-    mood = input("How are you feeling today? (happy/sad/neutral): ").lower()
+    mood = input("How are you feeling today? (happy/sad/neutral/excited/stressed): ").lower()
     
     happy_fortunes = [
         "✨ Your fortune: Amazing moments lie ahead, Dhruv Pathak! Stay cheerful. ✨",
@@ -23,15 +23,31 @@ def main():
         "✨ Your fortune: Walking the middle path will lead you to unexpected rewards. ✨"
     ]
 
+    excited_fortunes = [
+        "✨ Your fortune: Let your excitement fuel a masterpiece today, Dhruv! ✨",
+        "✨ Your fortune: Dhruv Pathak's vibrant energy is contagious—watch others light up around you! ✨",
+        "✨ Your fortune: That spark of enthusiasm will open doors to unforgettable moments. ✨"
+    ]
+
+    stressed_fortunes = [
+        "✨ Your fortune: Inhale calm, exhale worry—peace is closer than you think. ✨",
+        "✨ Your fortune: Dhruv Pathak, every tough moment is shaping your resilience. ✨",
+        "✨ Your fortune: The tension of today is carving out the strength you'll use tomorrow. ✨"
+    ]
+
 
     if mood == "happy":
         print(random.choice(happy_fortunes))
     elif mood == "sad":
         print(random.choice(sad_fortunes))
     elif mood == "neutral":
-        print(random.choice(neutral_fortunes))   
+        print(random.choice(neutral_fortunes))  
+    elif mood == "excited":
+        print(random.choice(excited_fortunes))
+    elif mood == "stressed":
+        print(random.choice(stressed_fortunes))
     else:
-        print("✨ Your fortune: I cannot read your mood, but Adesh Sinha's destiny is still bright! ✨")
+        print("✨ Your fortune: I cannot read your mood, but Dhruv Pathak's destiny is still bright! ✨")
 
 if __name__ == "__main__":
     main()
